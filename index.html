@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+         <header>
+            <h1 class="heading"><img src="icon.jpg" width="50px">
+                Books Finding App!
+            </h1>
+            <h2 class="heading-2">
+                Welcome to open library:]
+            </h2>
+         </header>
+            <main>
+                <div class="content">
+                <section class="main-content">
+                    <form id="search-form">
+                        <select id="search-type" name="type">
+                            <option value="subject">Subject TextBooks</option>
+                            <option value="title">Book Titile</option>
+                            <option value="isbn">ISBN</option>
+                            <option value="author">Author Name</option>
+                        </select>
+                        <label for="seach-input"></label>
+                        <input id="search-input" type="text" name="value" placeholder="Search TextBooks or Books">
+                        
+                        <button id="search-button" >Fetch</button>
+            
+                        <select id="sort">
+                            <option value="select">Sort By</option>
+                            <option value="ratings">Ratings</option>
+                            <option value="pages">No.of Pages</option>
+                        </select>
+
+                        <label for="filter" ><a id="ebook">Ebook</a>
+                            <input type="checkbox" id="filter">
+                        </label>
+                    </form>
+
+                        <div id="loading-spinner" class="spinner" style="display: none;"></div>
+                        <ul id="book-list"></ul>
+                        <button id="more">show More</button>
+
+                        <ul id="selected-book" style="display: none;"></ul>
+
+                </section>
+                <section class="trending-section">
+                    <h2 id="trending">trending books</h2>
+                    
+                    <ul id="trending-list"></ul>
+
+                    <button id="load-more" style="display: none;">Show More</button>
+
+                </section>
+
+                </div>
+            </main>
+            
+           
+            <script type="module" src="main.js"></script>
+    </body>
+</html>
+
