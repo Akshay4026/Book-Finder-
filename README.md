@@ -27,7 +27,7 @@ used Open Library Api to extract Books
 3.This function is asynchronus function responsible to handle the fetching of Books thorugh api call.<br>
 4.This function crates the array of Objects where each object contains details of a single book ,Now this array to passed to **displayBook()** function.<br>
 5.This function displays the required fields to the user on the interface .<br>
-6.Also handled fetchinng more books on clciking on more button using page endpoint of API.
+6.Also handled fetchinng more books on clciking on **( lazy loading)** more button using page endpoint of API.
 6.There is another function called applyFilterAndSOrt() which helps the user to Filter(ebooks) and apply the Sort(books ratings or number of pages).<br>
 7.Onclicking on single Book the function whether that particular books have Ebook public access or not If yes i will open the books to read or else returns No ebook available alert to the user.<br><br>
 
